@@ -73,7 +73,7 @@ void logdata(int array[])
     sample.id = 1;
     sprintf(sample.range,"%d-%d\n", chrgSession[3], chrgSession[6]);
     sample.count = array[1];
-    fwrite(&sample, sizeof(s), 1, fp);
+    fwrite(&sample, sizeof(sample), 1, fp);
     fclose(fp);
 
 }
